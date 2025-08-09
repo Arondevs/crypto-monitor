@@ -1,0 +1,160 @@
+ * {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+ }
+
+
+ body {
+     
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+     background: linear-gradient(135deg, #6e7f9b 30%, #b17c7c 200%, #0a0d1b 0%);
+     
+     line-height: 1.6;
+   
+     color: #334155;
+
+ }
+
+
+ .container {
+
+    max-width: 1200px;
+
+     margin: 0 auto;
+
+    padding: 40px 20px;
+
+ }
+
+
+.header {
+
+     
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+h1 {
+
+     font-size: 3em;
+    
+     font-size: 700;
+    
+     color: #1e293b;
+
+     margin-bottom: 10px;
+
+}
+
+.subtitle {
+
+  font-size: 1.1rem;
+
+  color: #02285e;
+
+}
+
+.crypto-grid {
+
+   display: grid;
+
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+   gap: 24px;
+
+}
+
+.crypto-card {
+
+   background-color: #ffffff;
+   
+   border-radius: 12px;
+
+   box-shadow: 0 4px 6px rbga(0, 0, 0, 0,0.9);
+
+   padding: 24px;
+
+   text-align: center;
+
+   transition: transform 0.7s ease, box-shadow 0.7s ease;
+
+}
+
+.crypto-card:hover {
+
+transform: translateY(-8px);
+
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
+
+}
+
+.crypto-name {
+
+font-size: 1.5rem;
+
+font-weight: 600px;
+
+color: #96947f;
+
+margin-bottom: 8px;
+
+}
+
+.crypto-symbol {
+
+font-size: 0.9rem;
+
+color: #64748b;
+
+margin-bottom: 16px;
+
+
+}
+
+
+.price {
+
+font-size: 1.8rem;
+
+font-weight: 650;
+
+color: #105e45;
+
+margin-bottom: 8px;
+
+}
+
+.change {
+
+font-size: 1rem;
+
+font-weight: 600;
+
+color: #c05555;
+
+}
+
+.change-positive {
+
+color: #059669;
+
+}
+
+@media (max-width: 768px) {
+
+  .crypto-grid {
+
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+
+  
+}
